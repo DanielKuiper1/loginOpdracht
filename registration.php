@@ -1,3 +1,7 @@
+<?php
+require_once("function.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +13,16 @@
 <body>
 <h1>registration</h1>
     <h2>Make an account here</h2>
-    <form>
-        Username:<input type="name"></br>
-        Password:<input type="password"></br>
-        <input type="button" value="make account">
+    <form method="post" action='registrationcheck.php'>
+        <label for="username">Username: </label>
+        <input type="text" name="username" required>
+        <br>
+
+        <label for="password">Password: </label>
+        <input type="password" name="password" required>
+        <br>
+
+        <input type="submit" name="registration_btn">
     </form>
 </body>
 </html>

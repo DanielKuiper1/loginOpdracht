@@ -1,3 +1,6 @@
+<?php
+require_once "function.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,3 +15,6 @@
     <a href=login.php>create account</a>
 </body>
 </html>
+<?php
+checklogin();
+?>
